@@ -80,6 +80,10 @@ footer a:link, footer a:visited {
   width: 50%;
   }
 
+.tab {
+  tab-size: 2;
+  }
+
 .quote {
   padding-left: 1em; 
   display:block
