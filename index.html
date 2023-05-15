@@ -29,30 +29,30 @@
 				<h3> Overview of the Data </h3>
 				<p> Our dataset of susceptible users was provided by authors studying both political and financial social media manipulation. In the next two sections we describe these datasets and the respective control datasets we generated. We then collected 11 control posts and the users who interacted with them. </p>
 				
-				<p><img src="pol_scat.png" alt="" width="800" height="800" class="alignleft" /> These two scatter plots represent the age vs. log of the number of followers for the political and financial datasets. At first glance, the scatter plots, as seen in these plots, do not show a significant difference between the susceptible and control groups. However, looking more closely at the scatter plots for log followers versus age, we can see there are a few susceptible users with lower numbers of log followers and age than the control group.  </p>
-				<p><img src="fin_scat.png" alt="" width="800" height="800" class="alignleft" /> We also see a potential cluster of control users with a higher number of log followers and older accounts. The control observation is more significant in the plot for the political dataset and the susceptible observation is more significant in the financial dataset plot. These plots provided us with a reson to further investigate these variables. </p>
+				<p><img src="pol_scat.png" alt="" width="800" height="500" class="alignleft" /> These two scatter plots represent the age vs. log of the number of followers for the political and financial datasets. At first glance, the scatter plots, as seen in these plots, do not show a significant difference between the susceptible and control groups. However, looking more closely at the scatter plots for log followers versus age, we can see there are a few susceptible users with lower numbers of log followers and age than the control group.  </p>
+				<p><img src="fin_scat.png" alt="" width="800" height="500" class="alignleft" /> We also see a potential cluster of control users with a higher number of log followers and older accounts. The control observation is more significant in the plot for the political dataset and the susceptible observation is more significant in the financial dataset plot. These plots provided us with a reson to further investigate these variables. </p>
 
 				
 			
 				<h3> Page Metric Analysis</h3>
 				<p> Here we use CCDF and histograms of the page metrics in order to understand if there is a difference between the control and susceptible users.</p>
-				<p><img src="ecdf_pol_logfollowing.png" alt="" width="1000" height="800" class="alignleft" /> 
-					<img src="ecdf_fin_logfollowing.png" alt="" width="1000" height="800" class="alignleft" /> </p>
+				<p><img src="ecdf_pol_logfollowing.png" alt="" width="700" height="500" class="alignleft" /> 
+					<img src="ecdf_fin_logfollowing.png" alt="" width="700" height="500" class="alignleft" /> </p>
 				<p>When we look at the log of the following for the susceptible compared to the control users for both datasets, we see the susceptible users tend to follow less accounts. </p>
-				<p><img src="ecdf_pol_logfollowers.png" alt="" width="1000" height="800" class="alignleft" /> 
-					<img src="ecdf_fin_logfollowers.png" alt="" width="1000" height="800" class="alignleft" /> </p>
+				<p><img src="ecdf_pol_logfollowers.png" alt="" width="700" height="500" class="alignleft" /> 
+					<img src="ecdf_fin_logfollowers.png" alt="" width="700" height="500" class="alignleft" /> </p>
 				<p>While it is less noticable of a difference, we can see the susceptible users also tend to have less followers than the control accounts. </p>
-				<p><img src="ecdf_pol_age.png" alt="" width="1000" height="800" class="alignleft" /> 
-					<img src="ecdf_fin_age.png" alt="" width="1000" height="800" class="alignleft" /> </p>
+				<p><img src="ecdf_pol_age.png" alt="" width="700" height="500" class="alignleft" /> 
+					<img src="ecdf_fin_age.png" alt="" width="700" height="500" class="alignleft" /> </p>
 				<p> Finally, we can see the susceptible accounts tend to be younger. However, this is most noticible in the histogram plots. The tails show the youngest accounts tend to be susceptible users, while the older accounts tend to be control users. </p>
 			
 				<h3> Behavioral Metric Analysis</h3>
 				<p> We used a tool called BLOC which allowed us to better understand users posting habits. One way we analyzed this data was to plot it using Principal Componant Analysis. PCA allows us to take multiple variables, in our case BLOC words, reduces the dimensionality, and transforms them into two principal component variables. In both plots we see significant overlapping for the susceptible and control users. Both datasets received an explained variance of 17% which means these plots are not very good.
-				<p><img src="PCA_pol.png" alt="" width="800" height="800" class="alignleft" /> 
-					<img src="PCA_fin.png" alt="" width="800" height="800" class="alignleft" /> </p>
+				<p><img src="PCA_pol.png" alt="" width="800" height="500" class="alignleft" /> 
+					<img src="PCA_fin.png" alt="" width="800" height="500" class="alignleft" /> </p>
 				<p> When we plotted both datasets together, due to the shrinking of the dataset, to see if having more data would produce better results. Here we can see there is still a lot of overlap, but it is still a better representation of the data. The explained variance for both datasets is 19%. This shows with more data we coould possibly have better and a more deffinitive understanding of how posting habits are different between susceptible and control users.
 					
-				<p><img src="PCA_full.png" alt="" width="800" height="800" class="alignleft" /> </p>
+				<p><img src="PCA_full.png" alt="" width="800" height="500" class="alignleft" /> </p>
 			</div>
 			
 		</div>
